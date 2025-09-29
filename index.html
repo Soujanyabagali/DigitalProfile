@@ -382,11 +382,15 @@
     </div>
 
     <!-- Contact Form -->
-    <form id="contact-form" action="https://formspree.io/f/YOUR_ENDPOINT" method="POST">
+    <form id="contact-form" data-netlify="true" method="POST">
+      <input type="hidden" name="form-name" value="contact">
       <input type="text" name="name" placeholder="Your full name" required>
       <input type="email" name="email" placeholder="your.email@example.com" required>
       <input type="text" name="subject" placeholder="What's this about?" required>
       <textarea name="message" placeholder="Your message..." rows="5" required></textarea>
+      <p class="honeypot" style="display: none;">
+        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+      </p>
       <button type="submit">Send a Message</button>
     </form>
   </div>
