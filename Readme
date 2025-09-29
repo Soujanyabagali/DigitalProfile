@@ -3,6 +3,23 @@
 ## Overview
 This is my **Interactive Digital Portfolio**, designed to showcase my skills, projects, certificates, and professional experience in a visually appealing and interactive way. It serves as a personal branding tool, highlighting both my technical abilities and creativity.
 
+## Project Contents
+This portfolio website is structured into several key sections to provide a comprehensive view of my professional profile:
+
+- **Home:** A hero section introducing Soujanya Bagali as a Full Stack & AI/ML Engineer, featuring a welcoming message, role description, call-to-action buttons (Hire Me, Get My Resume), and social media links for easy connection.
+
+- **About Me:** Includes a profile picture and an in-depth bio that outlines my expertise in full stack development and AI/ML, emphasizing skills in technologies like Python, JavaScript, React, Flask, TensorFlow, and more. It also states my career goals and aspirations.
+
+- **Education:** Presents my educational journey in a timeline format, detailing my Bachelor of Engineering at Karavali Institute of Technology, Pre-University education, and Secondary School, along with grades and achievements.
+
+- **Skills:** Categorizes and displays technical skills with icons and badges, divided into sections such as Full Stack Development (Python, Java, Flask, Django, React, HTML/CSS/JS), Machine Learning (TensorFlow, Keras, Scikit-learn, OpenCV, Pandas, NumPy), Databases (MySQL, SQL, Oracle), APIs & Tools (REST APIs, Git & GitHub), and Other Skills (Data Preprocessing, Model Deployment, Authentication, Dashboards, Agile, Problem Solving).
+
+- **Projects:** Showcases a selection of my key projects, each with an image, title, description, technology stack, and links to GitHub repositories for further exploration. Projects include Blood Group Detection Using Fingerprint, Meal Mate App, Automated Ensemble Techniques, SalesForge, Digital Profile, and Pneumonia Detection System.
+
+- **Certificates:** Lists my professional certificates with images that are clickable links to view the actual certificate files. Certificates cover areas like AI Foundations, Python for Data Science, Machine Learning, Full Stack Programming, AI & ML, TCS Career Edge, and Front End Technology.
+
+- **Contact:** Offers multiple ways to get in touch, including email, phone, location, social media links (GitHub, LinkedIn, Instagram), and a contact form for direct messages.
+
 ## Features
 - **Home / About Me:** Introduction and brief professional overview.  
 - **Skills:** Technical skills displayed with icons and visual indicators.  

@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soujanya Bagali | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
 
-<!-- Font Awesome Latest CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
-  <script defer src="script.js"></script>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
 </head>
 <body>
   <!-- Navbar -->
   <header>
-    <nav>
-      <h1 class="logo">My Portfolio</h1>
+    <nav class="navbar">
+      <a href="#home" class="logo">Soujanya Bagali</a>
+      <span class="hamburger"><i class="fas fa-bars"></i></span>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#certificates">Certificates</a></li>
@@ -30,85 +32,369 @@
 
   <!-- Hero Section -->
   <section id="home" class="hero">
-    <img src="assets/profile.jpg" alt="Profile" class="profile-pic">
-    <h2>Hello, I'm <span>Soujanya Bagali</span></h2>
-    <p>Frontend Developer | Learner</p>
-    <!-- Download Resume -->
-<a href="https://github.com/Soujanyabagali/Resume/raw/main/Resume.pdf" download="Soujanya_Bagali_Resume.pdf" class="btn">Download Resume</a>
+    <div class="hero-content">
+      <h2>Hi, I'm <span>Soujanya Bagali</span></h2>
+      <p class="role">Full Stack & AI/ML Engineer</p>
+      <p class="description">
+        Passionate about building intelligent applications and transforming ideas 
+        into scalable, actionable solutions. I love crafting innovative tech that makes a real difference, pouring my heart into every line of code to bring visions to life with creativity and dedication.
+      </p>
 
-  </section>
-
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a passionate web developer learning HTML, CSS, and JavaScript. I love creating interactive websites and exploring new technologies.</p>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>My Skills</h2>
-    <ul class="skills-list">
-      <li><i class="fab fa-html5"></i> HTML</li>
-      <li><i class="fab fa-css3-alt"></i> CSS</li>
-      <li><i class="fab fa-js"></i> JavaScript</li>
-    </ul>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-container">
-      <div class="project-card">
-        <h3>My Meal Mate App</h3>
-        <p>Meal Mate is a Django-based web application designed to simplify meal planning, recipe management, and user-based interactions. Built with a clean backend using Python and a responsive frontend, it provides a scalable solution for managing meals.</p>
-        <a href="https://github.com/Soujanyabagali/My-meal-mate-app" target="_blank">View Code</a>
+      <div class="buttons">
+        <a href="#contact" class="btn primary">Hire Me</a>
+        <a href="#contact" class="btn secondary">Get My Resume</a>
       </div>
-      <div class="project-card">
-        <h3>Automated-Ensemble-Techniques-for-Accuracy</h3>
-        <p>A simple task manager app with local storage support.</p>
-        <a href="https://github.com/Soujanyabagali/Automated-Ensemble-Techniques-for-Accuracy-" target="_blank">View Code</a>
+
+      <div class="social-icons">
+        <a href="https://github.com/Soujanyabagali" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/soujanya-bagali-90531a354/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:soujanyabagali11@example.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.instagram.com/invites/contact/?igsh=10lke0ahjtslk&utm_content=mzbyiny" target="_blank"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
   </section>
 
-  <!-- Certificates Section -->
-  <section id="certificates">
-    <h2>Certificates</h2>
-    <div class="certificates-container">
-      <div class="certificate-card">
-        <h3>Web Development Fundamentals</h3>
-        <p>Issued by IBM SkillsBuild</p>
-        <a href="https://lnkd.in/p/ewux2VSK" target="_blank">View Certificate</a>
-      </div>
-      <div class="certificate-card">
-        <h3>Oracle Cloud Infrastructure 2025 – AI Foundations Associate</h3>
-        <p> Oracle University</p>
-        <a href="https://lnkd.in/p/ehzP8MNu" target="_blank">View Certificate</a>
+
+  <!-- About Me -->
+  <section id="about" class="section">
+    <div class="about-container">
+      <img src="https://raw.githubusercontent.com/Soujanyabagali/Resume/main/mypic.jpeg" alt="Soujanya Bagali" class="profile-pic">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          As a <strong>dedicated Full Stack Developer</strong> and <strong>AI/ML specialist</strong>, I specialize in developing <span style="color: #3b82f6;">dynamic web applications</span> and advanced machine learning models. Expert in <strong>Python, JavaScript, React, Flask,</strong> and leading ML libraries, I focus on creating efficient, scalable solutions for complex real-world issues. I'm eager to innovate with cutting-edge tech and collaborate on transformative initiatives.
+        </p>
+        <p><strong>Career Goal:</strong> Join a forward-thinking team as a Full Stack and AI/ML Developer, applying my web and ML skills to engineer <span style="color: #3b82f6;">groundbreaking solutions</span> that drive meaningful impact.</p>
       </div>
     </div>
   </section>
 
-<!-- Contact Section -->
-<section id="contact">
-  <h2>Contact Me</h2>
-  <p>Let's connect! Reach me through:</p>
-  <div class="social-links">
-    <a href="https://github.com/Soujanyabagali" target="_blank">
-      <i class="fab fa-github"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/soujanya-bagali-90531a354/" target="_blank">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="mailto:soujanyabagali11@example.com">
-      <i class="fas fa-envelope"></i>
-    </a>
+      <div class="details">
+
+     <!-- Education-->
+<section id="education" class="section">
+  <h2 class="section-title">Education</h2>
+  <div class="edu-path">
+    <div class="milestone">
+      <span class="dot"></span>
+      <div class="details">
+        <h3>Bachelor of Engineering</h3>
+        <p class="college">Karavali Institute of Technology</p>
+        <p class="year">2021 - 2025</p>
+        <p>CGPA: 8.99 / 10</p>
+      </div>
+    </div>
+
+    <div class="milestone">
+      <span class="dot"></span>
+      <div class="details">
+        <h3>Pre-University</h3>
+        <p class="college">ICS Mahesh PU College</p>
+        <p class="year">2019 - 2021</p>
+        <p>Percentage: 86.83%</p>
+      </div>
+    </div>
+
+    <div class="milestone">
+      <span class="dot"></span>
+      <div class="details">
+        <h3> Secondary (Class 10)</h3>
+        <p class="college">Swami Vivekanand Vidya Samsthe</p>
+        <p class="year">2017 - 2018</p>
+        <p>Percentage: 86.72%</p>
+      </div>
+    </div>
   </div>
 </section>
 
+<!-- Skills-->
+<section id="skills" class="section">
+  <h2 class="section-title">Skills</h2>
+
+  <div class="skills-container">
+
+    <!-- Full Stack Development -->
+    <div class="skill-category">
+      <h3><i class="fas fa-code"></i> Full Stack Development</h3>
+      <div class="skill-badges">
+        <span class="skill-badge"><i class="fab fa-python"></i> Python</span>
+        <span class="skill-badge"><i class="fab fa-java"></i> Java</span>
+        <span class="skill-badge"><i class="fas fa-flask"></i> Flask</span>
+        <span class="skill-badge"><i class="fab fa-django"></i> Django</span>
+        <span class="skill-badge"><i class="fab fa-react"></i> React</span>
+        <span class="skill-badge"><i class="fab fa-html5"></i> HTML/CSS/JS</span>
+      </div>
+    </div>
+
+    <!-- Machine Learning -->
+    <div class="skill-category">
+      <h3><i class="fas fa-brain"></i> Machine Learning</h3>
+      <div class="skill-badges">
+        <span class="skill-badge"><i class="fab fa-tensorflow"></i> TensorFlow</span>
+        <span class="skill-badge"><i class="fas fa-layer-group"></i> Keras</span>
+        <span class="skill-badge"><i class="fas fa-chart-line"></i> Scikit-learn</span>
+        <span class="skill-badge"><i class="fas fa-eye"></i> OpenCV</span>
+        <span class="skill-badge"><i class="fas fa-table"></i> Pandas</span>
+        <span class="skill-badge"><i class="fas fa-calculator"></i> NumPy</span>
+      </div>
+    </div>
+
+    <!-- Databases -->
+    <div class="skill-category">
+      <h3><i class="fas fa-database"></i> Databases</h3>
+      <div class="skill-badges">
+        <span class="skill-badge"><i class="fas fa-mysql"></i> MySQL</span>
+        <span class="skill-badge"><i class="fas fa-code"></i> SQL</span>
+        <span class="skill-badge"><i class="fas fa-server"></i> Oracle</span>
+      </div>
+    </div>
+
+    <!-- APIs & Tools -->
+    <div class="skill-category">
+      <h3><i class="fas fa-plug"></i> APIs & Tools</h3>
+      <div class="skill-badges">
+        <span class="skill-badge"><i class="fas fa-exchange-alt"></i> REST APIs</span>
+        <span class="skill-badge"><i class="fab fa-git-alt"></i> Git & GitHub</span>
+      </div>
+    </div>
+
+    <!-- Other Skills -->
+    <div class="skill-category">
+      <h3><i class="fas fa-cogs"></i> Other Skills</h3>
+      <div class="skill-badges">
+        <span class="skill-badge"><i class="fas fa-file-alt"></i> Data Preprocessing</span>
+        <span class="skill-badge"><i class="fas fa-rocket"></i> Model Deployment</span>
+        <span class="skill-badge"><i class="fas fa-shield-alt"></i> Authentication</span>
+        <span class="skill-badge"><i class="fas fa-chart-bar"></i> Dashboards</span>
+        <span class="skill-badge"><i class="fas fa-users"></i> Agile</span>
+        <span class="skill-badge"><i class="fas fa-lightbulb"></i> Problem Solving</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Projects-->
+<section id="projects" class="section">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects-list">
+
+    <!-- Project Item 1 -->
+    <div class="project-item">
+      <h3><i class="fas fa-brain"></i> Blood Group Detection Using Fingerprint</h3>
+      <p>Developed a machine learning solution to predict blood groups from fingerprint images using CNNs for feature extraction and classification. Integrated into a web application for end-to-end prediction.</p>
+      <div class="tech-tags">
+        <span>Python</span>
+        <span>TensorFlow</span>
+        <span>OpenCV</span>
+        <span>Flask</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>SQL</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Soujanyabagali/Blood-Group-Prediction" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- Project Item 2 -->
+    <div class="project-item">
+      <h3><i class="fas fa-utensils"></i> Meal Mate App</h3>
+      <p>Django-based web application for meal planning and recipe management. Developed backend logic and interactive UI for seamless user experience.</p>
+      <div class="tech-tags">
+        <span>Python</span>
+        <span>Django</span>
+        <span>HTML</span>
+        <span>CSS</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Soujanyabagali/My-meal-mate-app" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- Project Item 3 -->
+    <div class="project-item">
+      <h3><i class="fas fa-chart-line"></i> Automated Ensemble Techniques for Accuracy</h3>
+      <p>Implemented ensemble learning techniques (Bagging, Boosting, Stacking) to improve classification accuracy on various datasets. Evaluated models using metrics like accuracy, precision, recall, and F1-score.</p>
+      <div class="tech-tags">
+        <span>Python</span>
+        <span>Machine Learning</span>
+        <span>Scikit-learn</span>
+        <span>Pandas</span>
+        <span>NumPy</span>
+        <span>Matplotlib</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Soujanyabagali/Automated-Ensemble-Techniques-for-Accuracy-" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- Project Item 4 -->
+    <div class="project-item">
+      <h3><i class="fas fa-shopping-cart"></i> SalesForge</h3>
+      <p>Developed a comprehensive sales management web application using the MERN stack. Implemented features for product management, order processing, and customer relationship management.</p>
+      <div class="tech-tags">
+        <span>MongoDB</span>
+        <span>Express.js</span>
+        <span>React</span>
+        <span>Node.js</span>
+        <span>JavaScript</span>
+        <span>HTML</span>
+        <span>CSS</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Soujanyabagali/SalesForge" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- Project Item 5 -->
+    <div class="project-item">
+      <h3><i class="fas fa-user"></i> Digital Profile</h3>
+      <p>Created a personal portfolio website to showcase skills, projects, and experience. Designed a responsive layout with interactive elements using HTML, CSS, and JavaScript.</p>
+      <div class="tech-tags">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Soujanyabagali/DigitalProfile" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- Project Item 6 -->
+    <div class="project-item">
+      <h3><i class="fas fa-heartbeat"></i> Pneumonia Detection System</h3>
+      <p>A deep learning model that analyzes chest X-ray images to detect pneumonia with 94% accuracy, helping doctors with early diagnosis.</p>
+      <div class="tech-tags">
+        <span>Python</span>
+        <span>TensorFlow</span>
+        <span>CNN</span>
+        <span>OpenCV</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Soujanyabagali/Pneumonia-Detection-System" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+</section>
+
+
+
+<!-- Certificates-->
+<section id="certificates" class="section">
+  <h2 class="section-title">Certificates</h2>
+
+  <div class="certificates-list">
+
+    <div class="certificate-item">
+      <a href="https://github.com/Soujanyabagali/private/blob/main/AI%20ORACLE.pdf" target="_blank">
+        <img src="https://via.placeholder.com/300x200/ffffff/000000?text=AI+Foundations+Associate" alt="AI Foundations Associate" class="certificate-image">
+      </a>
+      <h3>AI Foundations Associate</h3>
+      <p><em>Oracle University, Aug 2025</em></p>
+    </div>
+
+    <div class="certificate-item">
+      <a href="https://github.com/Soujanyabagali/private/blob/main/PYTHON%20COGNITIVE.pdf" target="_blank">
+        <img src="https://via.placeholder.com/300x200/ffffff/000000?text=Python+101+for+Data+Science" alt="Python 101 for Data Science" class="certificate-image">
+      </a>
+      <h3>Python 101 for Data Science</h3>
+      <p><em>IBM, June 2025</em></p>
+    </div>
+
+    <div class="certificate-item">
+      <a href="https://github.com/Soujanyabagali/private/blob/main/TIS%20ML.jpg" target="_blank">
+        <img src="https://github.com/Soujanyabagali/private/blob/main/TIS%20ML.jpg" alt="Machine Learning" class="certificate-image">
+      </a>
+      <h3>Machine Learning</h3>
+      <p><em>Take It Smart, Nov 2023</em></p>
+    </div>
+
+    <div class="certificate-item">
+      <a href="https://github.com/Soujanyabagali/private/blob/main/UDEMY%20FULL.pdf" target="_blank">
+        <img src="https://via.placeholder.com/300x200/ffffff/000000?text=Full+Stack+Programming" alt="Full Stack Programming (HTML, CSS, Java, JS)" class="certificate-image">
+      </a>
+      <h3>Full Stack Programming (HTML, CSS, Java, JS)</h3>
+      <p><em>Udemy, July 2025</em></p>
+    </div>
+
+    <div class="certificate-item">
+      <a href="https://github.com/Soujanyabagali/private/blob/main/ROOMAN.jpg" target="_blank">
+        <img src="https://github.com/Soujanyabagali/private/blob/main/ROOMAN.jpg" alt="AI & Machine Learning Certificate" class="certificate-image">
+      </a>
+      <h3>AI & Machine Learning Certificate</h3>
+      <p><em>Rooman Technologies Pvt. Ltd., May 2025</em></p>
+    </div>
+
+    <div class="certificate-item">
+      <a href="https://github.com/Soujanyabagali/private/blob/main/TCS.pdf" target="_blank">
+        <img src="https://via.placeholder.com/300x200/ffffff/000000?text=TCS+Career+Edge" alt="TCS Career Edge – Young Professional" class="certificate-image">
+      </a>
+      <h3>TCS Career Edge – Young Professional</h3>
+      <p><em>TCS iON, July 2025</em></p>
+    </div>
+
+    <div class="certificate-item">
+      <a href="https://github.com/Soujanyabagali/private/blob/main/EDUNET.jpg" target="_blank">
+        <img src="https://github.com/Soujanyabagali/private/blob/main/EDUNET.jpg" alt="Front End Technology" class="certificate-image">
+      </a>
+      <h3>Front End Technology</h3>
+      <p><em>SkillsBuild & IBM Cloud (Edunet foundation), Oct 2025</em></p>
+    </div>
+  </div>
+</section>
+
+<!-- contact -->
+<section id="contact" class="section">
+  <!-- Get In Touch -->
+  <h2 class="section-title">Get In Touch</h2>
+  <p class="section-subtitle">I’d love to hear from you! Reach out through the form or any of the options below..</p>
+
+  <!-- Let's Connect -->
+  <h3 class="section-subtitle-connect">Let's Connect</h3>
+  <p class="section-text-connect">I’d love to collaborate or hear from you. Feel free to reach out through any of the channels below.</p>
+
+  <div class="contact-container">
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:soujanyabagali11@gmail.com">soujanyabagali11@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+7676785878">+91 7676785878</a></p>
+      <p><strong>Location:</strong> Bangalore India</p>
+
+      <div class="social-links">
+        <a href="https://github.com/Soujanyabagali" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/soujanya-bagali-90531a354/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/invites/contact/?igsh=10lke0ahjtslk&utm_content=mzbyiny" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your full name" required>
+      <input type="email" name="email" placeholder="your.email@example.com" required>
+      <input type="text" name="subject" placeholder="What's this about?" required>
+      <textarea name="message" placeholder="Your message..." rows="5" required></textarea>
+      <button type="submit">Send a Message</button>
+    </form>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer>
-    <p>Soujanya Bagali. All Rights Reserved.</p>
+    <p>Made with ❤️ by Soujanya Bagali | All Rights Reserved.</p>
   </footer>
-</body>
-</html>
+
+>
