@@ -17,12 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
         content.style.maxHeight = content.scrollHeight + "px";
       }
 
-      const form = document.getElementById("contact-form");
+const form = document.getElementById("contact-form");
 form.addEventListener("submit", function(e) {
-  e.preventDefault();
   alert("Thank you! Your message has been sent.");
-  form.reset();
 });
+
+
 
     });
   });
